@@ -1,0 +1,11 @@
+Difference b/w Collection and collection in Java:-
+=================================================
+In the context of Java, "Collection" (with an uppercase 'C') refers to an interface defined in the Java Collections Framework. It is the root interface that represents a group of objects and defines the basic operations that can be performed on a collection, such as adding, removing, and iterating over elements. The `Collection` interface is part of the `java.util` package.
+
+On the other hand, "collections" (with a lowercase 'c') is a term used more generally to refer to any group of objects or a specific implementation class in the Java Collections Framework. It can refer to any class that implements one of the collection interfaces, such as `List`, `Set`, or `Map`. For example, `ArrayList`, `LinkedList`, `HashSet`, and `HashMap` are all different implementations of collections.
+
+To summarize:
+
+- "Collection" (with an uppercase 'C'): Refers to the `Collection` interface in the Java Collections Framework.
+
+- "collections" (with a lowercase 'c'): Refers to groups of objects or specific implementation classes that implement the collection interfaces defined in the Java Collections Framework.

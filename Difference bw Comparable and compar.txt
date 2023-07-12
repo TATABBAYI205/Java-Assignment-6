@@ -1,0 +1,20 @@
+Difference b/w Comparable and comparator:-
+=========================================
+In Java, "Comparable" and "Comparator" are interfaces used for sorting and ordering objects. They provide different ways to define the ordering logic for a collection of objects. Here's a breakdown of their differences:
+
+1. Purpose:
+   - Comparable: The Comparable interface is used to define the natural ordering of objects. It is implemented by the class itself, indicating that the objects of that class can be compared to each other.
+   - Comparator: The Comparator interface is used to define custom comparison logic for objects that do not implement the Comparable interface, or when you want to define multiple sorting criteria.
+
+2. Implementation:
+   - Comparable: The Comparable interface is implemented by the class whose objects you want to sort. It contains a single method called `compareTo()`, which compares the current object with another object and returns a negative integer, zero, or a positive integer depending on the comparison result.
+   - Comparator: The Comparator interface is a separate class that is used to define custom comparison logic. It contains a single method called `compare()`, which takes two objects as input and returns a negative integer, zero, or a positive integer based on the comparison result.
+
+3. Object Ordering:
+   - Comparable: When a class implements Comparable, it defines its natural ordering. The natural ordering is typically based on some intrinsic properties of the objects being compared. For example, a class representing numbers may implement Comparable to sort them in ascending order.
+   - Comparator: Comparator allows you to define different comparison strategies for objects. You can create multiple Comparator implementations to sort objects based on different criteria, depending on your requirements. This gives you flexibility in defining various sorting orders for the same class.
+
+4. Usage:
+   - Comparable: The Comparable interface is used for sorting objects in collections that have a natural ordering, such as sorting numbers or strings in ascending order using the `Collections.sort()` method.
+   - Comparator: The Comparator interface is used when you want to provide custom sorting logic for objects that don't have a natural ordering or when you want to sort objects based on different criteria. It allows you to sort objects using the `Collections.sort()` method by passing the Comparator implementation as an argument.
+

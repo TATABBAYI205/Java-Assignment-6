@@ -1,0 +1,13 @@
+Collision in Hash Map:-
+====================
+In a HashMap, collision refers to a situation where two or more different keys are mapped to the same bucket or index in the underlying array structure. Since HashMap uses an array of buckets to store key-value pairs, collisions can occur when multiple keys are hashed to the same index.
+
+When a collision occurs, the HashMap needs to handle it properly to ensure that all key-value pairs are stored and retrievable. There are different approaches to handle collisions:
+
+1. Separate Chaining: In this approach, each bucket in the HashMap contains a linked list or some other data structure to store multiple entries that hash to the same index. When a collision occurs, the new key-value pair is added to the linked list or data structure associated with that bucket.
+
+2. Open Addressing: In this approach, when a collision occurs, the HashMap looks for the next available or empty slot in the array (usually by probing techniques like linear probing or quadratic probing) and stores the key-value pair in that slot. This process continues until an empty slot is found.
+
+To handle collisions efficiently, HashMap uses a combination of hashing and equal key comparison. When a key is inserted or searched, it first calculates the hash code of the key, which determines the index in the underlying array. Then, if there is a collision, it compares the keys using their equals() method to find the exact match.
+
+The choice of collision resolution strategy (separate chaining or open addressing) affects the performance of HashMap in terms of insertion, retrieval, and deletion operations. The efficiency of the hashing algorithm and the load factor (the ratio of the number of entries to the number of buckets) also play a role in minimizing collisions and maintaining good performance.

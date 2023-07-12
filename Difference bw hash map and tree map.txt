@@ -1,0 +1,29 @@
+Difference b/w hash map and tree map:-
+===================================
+HashMap and TreeMap are both implementations of the Map interface in Java, but they have some key differences in their characteristics and behavior:
+
+1. Data Structure:
+   - HashMap: It uses an array-based data structure with linked lists (or other data structures) for handling collisions. The elements in a HashMap are not sorted.
+   - TreeMap: It uses a Red-Black Tree, a self-balancing binary search tree, to store the key-value pairs. The elements in a TreeMap are sorted based on their natural order or a custom comparator.
+
+2. Ordering:
+   - HashMap: The elements in a HashMap are not ordered. They are stored based on the hash codes of the keys, which determines the index in the underlying array.
+   - TreeMap: The elements in a TreeMap are ordered either by the natural ordering of the keys (if they implement Comparable) or by a custom comparator provided during TreeMap instantiation.
+
+3. Performance:
+   - HashMap: It provides constant-time performance (O(1)) for basic operations like get, put, and remove on average. However, performance can degrade if there are many collisions or the load factor is high.
+   - TreeMap: It provides O(log n) performance for basic operations as the tree needs to be traversed to find elements. The tree structure ensures efficient ordering and searching operations.
+
+4. Iteration Order:
+   - HashMap: The iteration order of elements in a HashMap is not predictable or consistent. It depends on the hash codes and the internal structure of the HashMap.
+   - TreeMap: The elements in a TreeMap are iterated in ascending order based on their keys. The iteration order follows the sorted order of the keys.
+
+5. Null Values and Keys:
+   - HashMap: It allows null values and a single null key. You can store and retrieve null values using HashMap.
+   - TreeMap: It does not allow null keys. However, it allows null values. If you attempt to insert a null key into a TreeMap, it will throw a NullPointerException.
+
+Choosing between HashMap and TreeMap depends on your specific requirements:
+- Use HashMap when you need fast access and do not require sorted ordering of keys.
+- Use TreeMap when you need sorted ordering of keys or need to perform range queries over the keys.
+
+It's important to note that both HashMap and TreeMap have their strengths and weaknesses, and the choice depends on the specific use case and desired behavior.

@@ -1,0 +1,17 @@
+Types of Interfaces in Collection framework:-
+============================================
+The Collection framework in Java includes several interfaces that define the behavior and functionality of different types of collections. Here are the main interfaces used in the Collection framework:
+
+1. `Collection`: It is the root interface in the Collection hierarchy. It represents a group of objects and defines the basic operations that can be performed on a collection, such as adding, removing, and iterating over elements. The `Collection` interface extends the `Iterable` interface, allowing collections to be traversed using the enhanced for-loop or iterator.
+
+2. `List`: It is an ordered collection that allows duplicate elements. Elements in a list are maintained in a specific order based on their insertion position. The `List` interface provides additional operations for accessing elements by their index, searching for elements, and manipulating the list's structure.
+
+3. `Set`: It is a collection that does not allow duplicate elements. It ensures that each element in the set is unique. The `Set` interface does not define any additional methods beyond those inherited from the `Collection` interface, but it specifies the uniqueness constraint.
+
+4. `Queue`: It is a collection that represents a queue data structure. It follows the FIFO (First-In-First-Out) principle, where elements are added at the end and removed from the beginning. The `Queue` interface defines methods for adding, removing, and inspecting elements in the queue.
+
+5. `Deque`: It is a double-ended queue that allows elements to be added or removed from both ends. It can function as both a queue and a stack. The `Deque` interface extends the `Queue` interface and provides additional methods for inserting, removing, and inspecting elements at both ends.
+
+6. `Map`: It represents a mapping between a key and a value. Each key in a map is unique, and it allows retrieval of a value based on the key. The `Map` interface does not extend the `Collection` interface but is an integral part of the Collection framework. It provides methods to store, retrieve, remove, and manipulate key-value pairs.
+
+These interfaces serve as the foundation of the Java Collection framework and provide a consistent set of methods and contracts that are implemented by various classes in the framework. By programming to these interfaces, you can write flexible and reusable code that can work with different types of collections interchangeably.

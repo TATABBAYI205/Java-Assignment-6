@@ -1,0 +1,17 @@
+Collectin in java:-
+===================
+In Java, a collection refers to a group of objects that are stored and manipulated as a single unit. The Java Collections Framework provides a set of interfaces and classes that are used to represent and operate on collections of objects. 
+
+The main interfaces in the Java Collections Framework are:
+
+1. `Collection`: It is the root interface that represents a group of objects. It defines the basic operations that can be performed on a collection such as adding, removing, and iterating over elements.
+
+2. `List`: It is an ordered collection that allows duplicate elements. Elements in a list can be accessed by their index.
+
+3. `Set`: It is a collection that does not allow duplicate elements. It ensures that each element in the set is unique.
+
+4. `Map`: It represents a mapping between a key and a value. Each key in a map is unique, and it allows retrieval of a value based on the key.
+
+These interfaces are implemented by various classes in the Java Collections Framework, such as `ArrayList`, `LinkedList`, `HashSet`, `TreeSet`, `HashMap`, and `TreeMap`, among others.
+
+Collections provide several benefits, including dynamic resizing, efficient search and retrieval, and convenient methods for manipulating groups of objects. They are widely used in Java programming for tasks like storing and processing data, implementing data structures, and simplifying complex operations on data sets.
